@@ -4,14 +4,14 @@ import java.util.EmptyStackException;
 
 public interface ISimpleStack{
 
-    public boolean isEmpty();
+    boolean isEmpty();
 
-    public int getSize();
+    int getSize();
 
-    public void push(Gateau gateau);
+    void push(Gateau gateau);
 
-    public Gateau peek() throws EmptyStackException;
+    Gateau peek() throws EmptyStackException;
 
-    public Gateau pop() throws EmptyStackException;
+    Gateau pop() throws EmptyStackException;
 
 }
