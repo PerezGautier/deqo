@@ -1,13 +1,15 @@
 package deqo.gper.mysimplestack;
 
-/**
- * Hello world!
- *
- */
+
 public class App 
 {
     public static void main( String[] args )
     {
-        System.out.println( "Hello World!" );
+        StackOfGateau stackOfGateau = new StackOfGateau(100);
+        stackOfGateau.push(new Gateau("ChocolateCake","Chocolate",1));
+        stackOfGateau.push(new Gateau("Cookies","Chocolate",1));
+
+        System.out.println(stackOfGateau.toString());
+
     }
 }
